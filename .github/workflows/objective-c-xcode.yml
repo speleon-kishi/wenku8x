@@ -38,4 +38,4 @@ jobs:
       uses: actions/upload-pages-artifact@v3
       with:
         name: Debug_IPA
-        path: wenku8x.ipa
+        path: /Users/runner/work/wenku8x/wenku8x/build/ios/iphoneos/wenku8x.ipa
