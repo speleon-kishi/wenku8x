@@ -34,7 +34,7 @@ jobs:
         zip -r wenku8x.ipa wenku8.app
         
     - name: Upload IPA Artifact
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-pages-artifact@v3
       with:
         name: Runner_Debug_IPA
         path: Runner.ipa
