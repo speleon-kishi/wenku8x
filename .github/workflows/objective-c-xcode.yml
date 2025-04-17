@@ -20,6 +20,7 @@ jobs:
     - name: Install Dependecies
       run: |
         cd ios
+        flutter pub add material_color_utilities:^0.8.0
         flutter pub get
         cd ..
         
