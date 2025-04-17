@@ -27,16 +27,3 @@ jobs:
     - name: Build iOS (Debug)
       run: |
         flutter build ios --debug --no-codesign
-        
-    - name: Package .app into IPA
-      run: |
-        mkdir -p Payload
-        cp -r build/ios/iphoneos/Runner.app Payload/
-        zip -r Payload Runner.ipa
-        rm -rf Payload
-        
-    - name: Upload IPA Artifact
-      uses: actions/upload-pages-artifact@v3
-      with:
-        name: Runner_Debug_IPA
-        path: Runner.ipa
