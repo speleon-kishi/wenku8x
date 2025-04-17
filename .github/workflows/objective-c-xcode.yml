@@ -13,7 +13,7 @@ jobs:
       uses: actions/checkout@v4
 
     - name: Setup Flutter
-      uses: speleon-kishi/wenku8x@c0845e47846752a63fe7ee9300e5320239683474
+      uses: subosito/flutter-action@v2
       with:
         flutter-version: '3.19.5' # 根据你的项目调整版本
 
