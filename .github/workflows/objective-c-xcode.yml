@@ -37,5 +37,5 @@ jobs:
     - name: Upload IPA Artifact
       uses: actions/upload-pages-artifact@v3
       with:
-        name: Runner_Debug_IPA
-        path: Runner.ipa
+        name: Debug_IPA
+        path: wenku8x.ipa
