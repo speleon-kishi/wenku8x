@@ -30,6 +30,7 @@ jobs:
 
     - name: Package .app into IPA
       run: |
+        cd iphoneos
         cp Runner.app wenku8x.app
         zip -r wenku8x.ipa wenku8.app
         
